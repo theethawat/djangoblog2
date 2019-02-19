@@ -7,11 +7,11 @@ Personal Web blog with Django Framework in Python 3.6 based on Computer Engineer
 ## Blog Image
 Website Photo
 
-![Website Photo]:(https://raw.githubusercontent.com/theethawat/djangoblog2/master/blog-image.png)
+![Website Photo](https://raw.githubusercontent.com/theethawat/djangoblog2/master/blog-image.png)
 
 Working Photo
 
-![Working Photo]:(https://raw.githubusercontent.com/theethawat/djangoblog2/master/working.png)
+![Working Photo](https://raw.githubusercontent.com/theethawat/djangoblog2/master/working.png)
 
 ## Student
 Theethawat Savastham ID: 5910110150 | PSU Hatyai Campus
