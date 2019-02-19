@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>Theethawat Savastham Blog</title>
-   <style>
-       body{
-        font-family: 'Open Sans', sans-serif;
-       }
-   </style>
+    <title>Theethawat Savastham</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
     <br>
     <div class="container">
-        
-       <div class="row">
-           <div class="col-md-8">
-               {% block content %}
-               {% endblock %}
-           </div>
-       </div>
-   
+        <h1><a href="/" style="text-decoration:none;"> Theethawat Savastham </a></h1>
+        <h2>Official Personal blog</h2>
+        <hr>
+       
+        {% block content %}
+     
+        {% endblock %}
+        <hr>
+        <p>Made with Django , Python and Django Girl tutorial.</p>
     </div>
-    
+
 </body>
+
 </html>

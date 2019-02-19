@@ -17,27 +17,23 @@
 </head>
 
 <body>
-    <br>
-    <div class="container">
-        <h1>Theethawat Savastham </h1>
-        <h2>Official Personal blog</h2>
-        <hr>
-        {% extends 'blog/base.html' %}
-        {% block content %}
-        {% for post in posts %}
-        <div class="card">
-            <div class="card-body">
-                <p>published: {{post.published_date }} </p>
-                <h3><a href="{% url 'post_detail' pk=post.pk %} ">{{post.title}} </a></h3>
-                <p> {{ post.text|linebreaksbr }} </p>
-            </div>
+
+    {% extends 'blog/base.html' %}
+
+    {% block content %}
+    {% for post in posts %}
+    <div class="card">
+        <div class="card-body">
+            <p>published: {{post.published_date }} </p>
+            <h3><a href="{% url 'post_detail' pk=post.pk %} ">{{post.title}} </a></h3>
+            <p> {{ post.text|linebreaksbr }} </p>
         </div>
-        <br>
-        {% endfor %}
-        {% endblock %}
-        <hr>
-        <p>Made with Django , Python and Django Girl tutorial.</p>
     </div>
+    <br>
+    {% endfor %}
+    {% endblock %}
+
+
 
 </body>
 
