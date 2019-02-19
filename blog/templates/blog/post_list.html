@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Theethawat Savastham</title>
-   <style>
-       body{
-        font-family: 'Open Sans', sans-serif;
-       }
-   </style>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
     <br>
     <div class="container">
         <h1>Theethawat Savastham </h1>
         <h2>Official Personal blog</h2>
         <hr>
+        {% extends 'blog/base.html' %}
+        {% block content %}
         {% for post in posts %}
-            <div class="card">
-                <div class="card-body">
-                    <p>published: {{post.published_date }} </p>
-                    <h3><a href="">{{post.title}} </a></h3>
-                    <p> {{ post.text|linebreaksbr }} </p>
-                </div>
+        <div class="card">
+            <div class="card-body">
+                <p>published: {{post.published_date }} </p>
+                <h3><a href="">{{post.title}} </a></h3>
+                <p> {{ post.text|linebreaksbr }} </p>
             </div>
-            <br>
+        </div>
+        <br>
         {% endfor %}
+        {% endblock %}
         <hr>
         <p>Made with Django , Python and Django Girl tutorial.</p>
     </div>
-    
+
 </body>
+
 </html>
